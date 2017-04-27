@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private static void addContent(RecyclerBinder recyclerBinder, ComponentContext context) {
-        for (int i = 0; i < 32; i++) {
+        for (int i = 0; i < 10; i++) {
             recyclerBinder.insertItemAt(
                     i,
                     ComponentInfo.create()
@@ -56,33 +56,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void simple(){
-
-        final ComponentContext c = new ComponentContext(this);
-
-        final LithoView lithoView = LithoView.create(
-                this /* context */,
-                Text.create(c)
-                        .text("Hello, World!")
-                        .textSizeDip(50)
-                        .build());
-
-        setContentView(lithoView);
-    }
-
-    public void simple2(){
-
-        final ComponentContext c = new ComponentContext(this);
-
-        final LithoView lithoView = LithoView.create(
-                this /* context */,
-                Image.create(c)
-                        .drawableRes(R.drawable.androidoicon_one)
-                        //.textSizeDip(50)
-                        .build());
-
-        setContentView(lithoView);
-    }
 
 
 
