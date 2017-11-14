@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Log.v("tag","msg");
         final ComponentContext context = new ComponentContext(this);
 
         final RecyclerBinder recyclerBinder = new RecyclerBinder(
