@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.OrientationHelper;
+import android.util.Log;
 
 import com.facebook.litho.Component;
 import com.facebook.litho.ComponentContext;
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
+        Log.v("tag","msg");
         final ComponentContext context = new ComponentContext(this);
 
         final RecyclerBinder recyclerBinder = new RecyclerBinder(
