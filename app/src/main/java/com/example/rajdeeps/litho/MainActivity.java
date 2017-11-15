@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         final ComponentContext context = new ComponentContext(this);
-
+Log.d("vf","f");
         final RecyclerBinder recyclerBinder = new RecyclerBinder(
                 context,
                 new LinearLayoutInfo(this, OrientationHelper.VERTICAL, false));
